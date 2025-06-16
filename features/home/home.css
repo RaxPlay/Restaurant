@@ -1,12 +1,28 @@
+@import url('https://fonts.googleapis.com/family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+
 body{
-    background-color: #171717;
-    height: 100vh;
+    background: url(./imgs/food\ hero.jpg) no-repeat center center/cover;
+    backdrop-filter: brightness(0.5);
+    margin: 0%;
+    height: 99vh;
+    font-family: 'Inter', sans-serif;
 }
 
+/*-------------*\
+ #HEADER/NAV-BAR
+\*-------------*/
+
+header{
+    width: 95%;
+    padding: 40px;
+    display: block;
+}
 nav{
     margin: auto;
-    width: 30%; 
+    width: 27%; 
     background-color: #1c1c1c;
+    border: 1px solid rgb(255, 212, 57);
     border-radius: 5px;
 }
 nav ul{
@@ -27,15 +43,76 @@ nav ul a:hover{
 }
 nav ul .nav-bar-components{
     margin-left: 23px;
-    padding: 20px;
+    padding: 10px;
 }
 
+.rotate{
+    border: 1px solid white;
+    padding: 26px;
+    position: absolute;
+    right: 9.9%;
+    top: 3.0%;
+    height: 47px;
+    width: 47px;
+    border-radius: 5px;
+
+    animation: rotate 3s infinite linear;
+}
 .reserve-button{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
     position: absolute;
     right: 10%;
-    top: 2.0%;
-    padding: 20px;
+    top: 3.0%;
+    padding: 26px;
     background-color: rgb(255, 212, 57);
-    border: rgb(255, 212, 57);
+    border: 1px solid rgb(255, 212, 57);
     border-radius: 5px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+
+
+    transition: 0.5s;
+}
+.reserve-button:hover{
+    color: white;
+    background-color: #1c1c1c;
+    transform: translateY(-100);   
+    cursor: pointer; 
+}
+
+/*---------*\
+    #HERO
+\*---------*/
+
+.hero{
+    color: white;
+    margin: auto;
+    display: flex;
+    width: 97%;
+    justify-content: center;
+    
+}
+.hero h1{
+    font-family: "Twinkle Star", sans-serif;
+    font-size: 4rem;
+}
+.hero p{
+    font-size: 1rem;
+}
+
+/*---------------*\
+    #ANIMATIONS
+\*---------------*/
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
 }
