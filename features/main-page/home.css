@@ -5,7 +5,7 @@ body{
     background: url(/components/imgs/food\ hero.jpg) no-repeat center center/cover;
     backdrop-filter: brightness(0.3);
     margin: 0%;
-    height: 100vh;
+    height: 100dvh;
     font-family: 'Inter', sans-serif;
 }
 
@@ -135,6 +135,7 @@ h2{
 }
 .menu {
     margin: auto;
+    margin-bottom: 40px;
     width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
