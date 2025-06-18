@@ -8,32 +8,37 @@
     <script src="https://kit.fontawesome.com/ba998730f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
+    <button class="go-up" onclick="goHome()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <a href="https://github.com/RaxPlay/Restaurant" class="github-repository" target="_blank">
         <i class="fa-brands fa-github fa-xl"></i>
     </a>
     <header>
         <nav>
             <ul>
-                <a href="">
-                    <li class="nav-bar-components home">
+                <button onclick="goHome()">
+                    <li class="nav-bar-components home-component">
                         Home
                     </li>
-                </a>
-                <a href="">
+                </button>
+                <button>
                     <li class="nav-bar-components menu-component">
                         Menu
                     </li>
-                </a>
-                <a href="">
-                    <li class="nav-bar-components about">
-                        About us
-                    </li>
-                </a>
-                <a href="">
-                    <li class="nav-bar-components contact">
+                </button>
+                <button>
+                    <li class="nav-bar-components contact-component">
                         Contact
                     </li>
-                </a>
+                </button>
+                <button>
+                    <li class="nav-bar-components about-component">
+                        About us
+                    </li>
+                </button>
             </ul>
             <div class="rotate"></div>
             <button class="reserve-button">
@@ -63,8 +68,24 @@
             </div>
             <div class="spaghetti-container">   
                 <img src="/components/imgs/spaghetti.png" alt="" class="shrimp">
-                <p class="food-description">"spaghetti"</p>
+                <p class="food-description">"Spaghetti"</p>
             </div>
+        </div> 
+    </section>
+
+    <section class="contact-container">
+        <h2>Contact</h2>
+        <div class="contact-box">
+            <label for="tel">Call us: </label>
+            <a href="tel:+1234567890" target="_blank">+1 (234) 567-890</a>
+        </div>
+        <span>*this phone doesn't work and was only used for this project*</span>
+    </section>
+
+    <section class="about-us-container">
+        <div>    
+            <h1>About Us</h1>
+            <p>We are a restaurant with food 👍</p>
         </div>
     </section>
 
