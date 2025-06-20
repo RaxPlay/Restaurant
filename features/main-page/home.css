@@ -9,28 +9,6 @@ body{
     font-family: 'Twinkle Star', sans-serif;
 }
 
-/*----------*\
-    #Arrow
-\*----------*/
-.go-up{
-    position: fixed;
-    right: 3%;
-    bottom: 3%;
-    height: 70px;
-    width: 70px;
-    border: 1px solid rgb(255, 212, 57);
-    border-radius: 50%;
-    background-color: rgb(255, 212, 57);
-    color: black;
-
-    transition: 0.5s;
-}
-.go-up:hover{
-    background-color: #1c1c1c;
-    color: white;
-    cursor: pointer;
-}
-
 /*-------------*\
  #HEADER/NAV-BAR
 \*-------------*/
@@ -258,7 +236,3 @@ span{
         transform: rotate(180deg);
     }
 }
-
-/*------------------*\
-    #RESPONSIVNESS
-\*------------------*/
