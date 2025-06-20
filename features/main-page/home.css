@@ -3,7 +3,7 @@
 
 body{
     background: url(../imgs/food\ hero.jpg) no-repeat center center/cover;
-    backdrop-filter: brightness(0.3);
+    backdrop-filter: brightness(0.3) blur(3px);
     margin: 0%;
     height: 100dvh;
     font-family: 'Twinkle Star', sans-serif;
@@ -33,6 +33,7 @@ nav{
     margin: auto;
     width: 27%; 
     background-color: #1c1c1c;
+    
     border: 1px solid rgb(255, 212, 57);
     border-radius: 5px;
 }
